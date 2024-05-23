@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Receptiv</title>
+<style>
+/* Stiluri generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Stiluri pentru ecrane mici (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Stiluri pentru ecrane medii (min-width: 601px) și mari (min-width: 992px) */
+@media only screen and (min-width: 601px) {
+    /* Stiluri pentru ecrane medii */
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Stiluri pentru ecrane mari */
+    .container {
+        max-width: 960px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bun venit pe Siteul Meu!</h1>
+    <p>Aici poți scrie conținutul siteului tău.</p>
+</div>
+
+</body>
+</html>

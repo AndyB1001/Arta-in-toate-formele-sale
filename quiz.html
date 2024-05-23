@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<style type="text/css">
+		label { font-size: 25px; 
+		 } 
+		body {
+			background-image: url("media/qf.jpg");
+			background-repeat: repeat;
+			color: black;;
+		}
+	</style>
+</head>
+<body>
+	<div class="link">
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html" target="_self">Homepage</a>
+			</li>
+			<li>
+				<a href="Literatura.html" target="_self">Literatura</a>
+			</li>
+			<li>
+				<a href="Muzica.html" target="_self">Muzica</a>
+			</li>
+			<li>
+				<a href="Pictura.html" target="_self">Pictura</a>
+			</li>
+			<li>
+				<a href="quiz.html" target="_self">Quiz</a>
+			</li>
+			
+			
+		</ul>
+	</nav>
+</div>
+	<header>Quiz time!</header>
+	<div class="container">
+		<h3>Puncte:<span id="noPoints">0</span>/100</h3>
+		<h4>Do you consider yourself a know-it-all about art? Let's find out!</h4>
+
+		<form>
+			<div class="form-group">
+				<h3>Question 1-Literatura</h3>
+				<img src="media/dorian.jpg">
+				<label for="q1">Cine a scris "Portretul lui Dorian Gray"?</label>
+				<select id="q1" class="form-group">
+					<option value="christie">Agatha Christie</option>
+					<option value="wilde">Oscar Wilde</option>
+					<option value="van-gogh">Vincent Van-Gogh</option>
+					<option value="shakespeare">William Shakespeare</option>
+				</select>
+			</div>
+			<button type="button" onclick="verifica1(this)">Verifica</button>
+			<div class="form-group">
+				<h3>Question 2-Literatura</h3>
+				<img src="media/poee.jpg">
+				<label for="q2">Care este emblema lui Poe?</label>
+				<select id="q2" class="form-group">
+					<option value="pisica">Pisica neagra</option>
+					<option value="bufnita">Bufnita</option>
+					<option value="corb">Corbul</option>
+					<option value="lup">Lupul</option>
+				</select>
+			</div>
+			<button type="button" onclick="verifica2(this)">Verifica</button>
+			<div class="form-group">
+				<h3>Question 3-Literatura</h3>
+				<img src="media/agatha.jpg">
+				<label for="q3">Cum mai era cunoscuta Agatha Christie?</label>
+				<select id="q3">
+					<option value="misterul">Regina Misterului</option>
+					<option value="intuneric">Contesa Misterului</option>
+					<option value="moarte">Regina Mortii</option>
+					<option value="printesa">Printesa Misterului</option>
+				</select>
+			</div>
+			<button type="button" onclick="verifica3(this)">Verifica</button>
+			<div class="form-group">
+				<h3>Question 4-Pictura</h3>
+				<img src="media/gogh.jpg">
+				<label for="q4">Ce opere de arta a pictat Van-Gogh?</label>
+				<h5>Raspunsuri multiple! Folositi ctrl si click pentru a le selecta</h5>
+				<select id="q4" size="8" multiple>
+					<option value="cafe">Cafe Terrace at night</option>
+					<option value="nuferi">Nuferi</option>
+					<option value="irisi">Irisi</option>
+					<option value="david">David</option>
+					<option value="water">The water lily pond</option>
+					<option value="starry">Starry night</option>
+					<option value="portret">Autoportret</option>
+					<option value="cartofi">Mancatorii de cartofi</option>
+				</select>
+			</div>
+			<button type="button" onclick="verifica4(this)">Verifica</button>
+			<div class="form-group">
+				<h3>Question 5-Pictura</h3>
+				<img src="media/femeie.jpg">
+				<label for="q5">Cine a pictat acest tablou?</label>
+				<select id="q5">
+					<option value="vangogh">Vincent Van-Gogh</option>
+					<option value="monet">Claude Monet</option>
+					<option value="michelangelo">Michelangelo Buonarroti</option>
+					<option value="DaVinci">Leonardo DaVinci</option>
+				</select>
+			</div>
+			<button type="button" onclick="verifica5(this)">Verifica</button>
+			<div class="form-group">
+				<h3>Question 6-Pictura</h3>
+				<img src="media/mon.jpg">
+				<label for="q6">In ce curent artistic se incadrau picturile lui Monet?</label>
+				<select id="q6">
+					<option value="baroc">Baroc</option>
+					<option value="roman">Romantism</option>
+					<option value="impres">Impresionism</option>
+					<option value="modernism">Modernism</option>
+				</select>
+			</div>
+			<button type="button" onclick="verifica5(this)">Verifica</button>
+			<div class="form-group">
+	          	  <h3>Question 7-Muzica</h3>
+	          	  <img src="media/wind.jpg">
+		          <label for="q7">Din ce melodie sunt preluate versurile: "The world is closing in/Did you ever think/That we could be so close like brothers?"</label>
+		          <input id="q7" type="text" name="q7" class="form-group">
+		      </div>
+			<button type="button" onclick="verifica7(this)">Verifica</button>
+			<div class="form-group">
+				<h3>Question 8-Muzica</h3>
+				<img src="media/mane.jpg">
+				<label for="q8">Cine este solistul trupei Maneskin?</label>
+				<select id="q8">
+					<option value="thomas">Thomas Raggi</option>
+					<option value="eros">Eros Ramazzotti</option>
+					<option value="damiano">Damiano David</option>
+					<option value="umberto">Umberto Tozzi</option>
+				</select>
+			</div>
+			<button type="button" onclick="verifica8(this)">Verifica</button>
+			<div class="form-group">
+				<h3>Question 9-Muzica</h3>
+				<img src="media/cenaclu.jpg">
+				<label for="q9">Cum a numit Paunescu noua generatie?</label>
+				<select id="q9">
+					<option value="net">Generatia internetului</option>
+					<option value="adidasi">Generatia in adidasi</option>
+					<option value="blugi">Generatie in blugi</option>
+					<option value="genz">Generatia Z</option>
+				</select>
+			</div>
+			<button type="button" onclick="verifica9(this)">Verifica</button>
+			<div class="form-group">
+				<h3>Question 10-Arta</h3>
+				<img src="media/art.jpg">
+				<label for="q10">Care este legatura ta personala cu Arta? <p>Crezi ca este un element important in viata ta?</p></label>
+				<input id="q10" type="text" name="q10" class="form-group">
+			</div>
+			<button type="button" onclick="verifica10(this)">Verifica</button>
+
+			<script type="text/javascript">
+				var score = 0;
+			var answered = 0;
+			var pointsElem = document.getElementById("noPoints");
+			function verifica1(obj) {
+			let q1 = document.getElementById("q1");
+			obj.disabled = true;
+			if (q1.selectedOptions[0].value === "wilde") {
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Bravo! Primesti 10 puncte!");
+			}
+			else {
+				alert("Offf, ai gresit! Maybe next time! Raspunsul corect era Oscar Wilde!");
+			}
+			answered++;
+		}
+		function verifica2(obj) {
+			let q2 = document.getElementById("q2");
+			obj.disabled = true;
+			if (q2.selectedOptions[0].value === "corb") {
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Bravo! Primesti 10 puncte!");
+			}
+			else {
+				alert("Offf, ai gresit! Maybe next time! Raspunsul corect era Corbul!");
+			}
+			answered++;
+		}
+		function verifica3(obj) {
+			let q3 = document.getElementById("q3");
+			obj.disabled = true;
+			if (q3.selectedOptions[0].value === "misterul") {
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Bravo! Primesti 10 puncte!");
+			}
+			else {
+				alert("Offf, ai gresit! Maybe next time! Raspunsul corect era Regina Misterului!");
+			}
+			answered++;
+		}
+		function verifica4(obj) {
+			let q4 = document.getElementById("q4");
+			obj.disabled = true;
+			let correctAns = ["cafe", "irisi", "starry", "portret", "cartofi"];
+			let noCResp = 0, noIResp = 0;
+			for (i = 0; i < q4.selectedOptions.length; i++) {
+				if (correctAns.includes(q4.selectedOptions[i].value)) {
+					noCResp++;
+					score += 2;
+				}
+				else {
+					noIResp++;
+					score -= 1;
+				}
+			}
+			if (noCResp == 5) {
+				alert("PERFECT! Le-ai pus corect pe toate! Primesti 10 puncte");
+			}
+			else {
+				alert("Nu au fost toate corecte...");
+			}
+			pointsElem.innerHTML = score;
+		}
+
+		
+		function verifica5(obj) {
+			let q5 = document.getElementById("q5");
+			obj.disabled = true;
+			if (q5.selectedOptions[0].value === "monet") {
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Bravo! Primesti 10 puncte!");
+			}
+			else {
+				alert("Offf, ai gresit! Maybe next time! Raspunsul corect era Claude Monet!");
+			}
+			answered++;
+		}
+		function verifica6(obj) {
+			let q6 = document.getElementById("q6");
+			obj.disabled = true;
+			if (q6.selectedOptions[0].value === "impres") {
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Bravo! Primesti 10 puncte!");
+			}
+			else {
+				alert("Offf, ai gresit! Maybe next time! Raspunsul corect era Impresionism!");
+			}
+			answered++;
+		}
+		function verifica7(obj) {
+			let q7 = document.getElementById("q7");
+			obj.disabled = true;
+			let correctAns = ["wind of change", "winds of change"];
+			if (correctAns.includes(q7.value.trim().toLowerCase())) {
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Bravo! Primesti 10 puncte");
+			}
+			else {
+				alert("Offf, ai gresit! Maybe next time! Raspunsul corect era Wind Of change!");
+			}
+		}
+		function verifica8(obj) {
+			let q8 = document.getElementById("q8");
+			obj.disabled = true;
+			if (q8.selectedOptions[0].value === "damiano") {
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Bravo! Primesti 10 puncte!");
+			}
+			else {
+				alert("Offf, ai gresit! Maybe next time! Raspunsul corect era Damiano David!");
+			}
+			answered++;
+		}
+		function verifica9(obj) {
+			let q9 = document.getElementById("q9");
+			obj.disabled = true;
+			if (q9.selectedOptions[0].value === "blugi") {
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Bravo! Primesti 10 puncte!");
+			}
+			else {
+				alert("Offf, ai gresit! Maybe next time! Raspunsul corect era Generatie in blugi!");
+			}
+			answered++;
+		}
+		function verifica10(obj) {
+			let q10 = document.getElementById("q10");
+			obj.disabled = true;
+				score += 10;
+				pointsElem.innerHTML = score;
+				alert("Genial! Primesti 10 puncte!");
+			}
+		
+		
+			</script>
+
+
+		</form>
+		<aside id="acasa">
+				<h3>Arta de acasa</h3>
+				<p>Dupa acest traseu printr-o scurta istorie a artei, este timpul sa imi prezint si eu roadele pasiunii mele.</p>
+				<h4>Literatura</h4>
+				<p><i> Ești un etern creator ce își semnează numele în istorie, iar eu o anonimă ce se va pierde printre stele-căzătoare. În a ta via ad astra, păzește-ți sufletul de urât. Eu mă ridic din tribune și părăsesc cursa ta către succes, nu am reușit să te înțeleg și îmi pare rău. Dar nu pot să mai vâslesc în apele învolburate ale minții tale și mă salvez cât mai pot.  Rămâi internat în a ta sigurătate, dragul meu Luceafăr! </i><b>Fragment din "Critica unui non-poet" de Andreea-Oana Bobotan</b> </p>
+				<h4>Muzica</h4>
+				<video controls>
+  <source src="media/chitara2.mp4" type="video/ogg">
+  <source src="chitara2.mp4" type="video/mpeg">
+  Your browser does not support the audio element.
+
+</video>
+<p>Interpretarea piesei "Fântânile", alături de trupa Alternosfera</p>
+<h4>Pictura</h4>
+<img src="media/arta.jpg">
+<p>"The fallen angel" schita in creion</p>
+			</aside>
+	</div>
+</body>
+</html>

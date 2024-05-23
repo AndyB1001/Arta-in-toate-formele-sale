@@ -1,0 +1,40 @@
+img {
+	width: 300px;
+ 	display: block;
+    border-radius: 30px;
+    border: 5px solid beige;
+}
+#acasa {
+	box-sizing: border-box;
+
+} 
+	
+button {
+	display: block;
+	width: 100%;
+	background-color: #b0cfd2;
+	border-color: #b0cfd2;
+	border-radius: 20px;
+	color: #0d1b67;
+}
+
+video {
+	width: 300px;
+	border-radius: 30px;
+}
+h5 {
+    font-size: 20px;
+ }
+ #q4 {
+ 	background-color: #b0cfd2;
+ 	border-color: #b0cfd2;
+
+ 	color: #0d1b67;
+ }
+ select {
+ 	background-color: #b0cfd2;
+ 	border-color: #b0cfd2;
+
+ 	color: #0d1b67;
+
+ }

@@ -1,0 +1,95 @@
+ header, h1, h2 {
+ 	font-family: 'Brush Script MT', cursive;
+
+ }
+ header {
+ 	text-align: center;
+ 	font-size: 50px;
+
+ }
+ img {
+ 	width: 300px;
+ 	display: block;
+ 	border-radius: 30px;
+ 	
+
+
+
+ }
+ #poet {
+ 	height:270px;
+ }
+ #om {
+ 	height: 230px;
+ 	float: left;
+ }
+ #muzeu {
+ 	height: 270px;
+ }
+ p {
+ 	font-size: 20px;
+ }
+ body {
+ 	background-color: #a57643;
+ 	opacity: 1;
+
+ }
+ section {
+ 	border: 5px dashed beige;
+ }
+ 
+ 
+ a {
+ 	text-decoration: none;
+ }
+.link a {
+	border-radius: 5px;
+	background-color: #452F0F;
+			color: beige;
+			text-decoration: none;
+			padding: 8px;
+			padding-left: 15px;
+			padding-right: 15px;
+
+}
+
+
+#muzeu {
+	float: right;
+}
+#poet {
+	float: left;
+}
+h2 {
+	font-size: 35px;
+}
+
+.container {
+	display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+ width: 30px;
+
+}
+.container2 {
+	display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+
+}
+.container3 {
+	display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+
+}
+
+.gridcont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;
+        }
+ 

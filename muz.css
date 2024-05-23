@@ -1,0 +1,16 @@
+img {
+	width: 570px;
+ 	display: block;
+    border-radius: 30px;
+    border: 5px solid beige;
+}
+audio {
+	color: ghostwhite;
+}
+blockquote {
+	font-size: 30px;
+}
+nav {
+    position: sticky;
+    top: 0px;
+ }

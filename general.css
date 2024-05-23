@@ -1,0 +1,59 @@
+
+header, h1, h2 {
+ 	font-family: 'Brush Script MT', cursive;
+ }
+header 
+ 	{ text-align: center;
+ 	font-size: 50px;
+ }
+ h1 {
+ 	font-size: 45px;
+ }
+ h2, h3 {
+ 	font-size: 40px;
+ }
+ h4 {
+ 	font-size: 35px;
+ }
+ nav ul li {
+ 	list-style-type: none;
+ 	display: inline;
+ 	position: sticky;
+ 	top: 0px;
+	 	}
+	 	.link a {
+	border-radius: 5px;
+	background-color: #452F0F;
+			color: beige;
+			text-decoration: none;
+			padding: 8px;
+			padding-left: 15px;
+			padding-right: 15px;
+
+}
+p, ul {
+	font-size: 25px;
+}
+.link a:hover {
+			background-color: #7A541B;
+		}
+		.link a:active {
+			background-color: #D99530;
+
+		}
+		.link a:visited {
+			background-color: #452F0F;
+			color: beige;
+		}
+		.link {
+			position: sticky;
+			top: 0px;
+
+		}
+		footer {
+			text-align: center;
+			background-color: black;
+			color: white;
+			padding: 10px;
+			margin-bottom: 0px;
+		}
